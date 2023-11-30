@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<form action="" method="post">
+
+    {% csrf_token %}
+    <h2>¿Quieres borrar la pelicula?</h2>
+    <button type="submit" style="display: inline-block; padding: 8px 16px; 
+    margin: 5px; font-size: 14px; text-align: center; text-decoration: none; cursor: pointer; border-radius: 4px; background-color: #db1d1d; color: white;">borrar</button>
+    <a href="{% url 'Listar' %}" style="display: inline-block; padding: 8px 16px;
+    margin: 5px; font-size: 14px; text-align: center; text-decoration: none; cursor: pointer; border-radius: 4px; background-color: #a1a1a1; color: white;">cancelar</a>
+
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h1>añadir pelicula</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" style="display: inline-block; padding: 8px 16px; 
+    margin: 5px; font-size: 14px; text-align: center; text-decoration: none; cursor: pointer; border-radius: 4px; background-color: #1ddb30; color: white;">guardar</button>
+    <a href="{% url 'Listar' %}" style="display: inline-block; padding: 8px 16px;
+    margin: 5px; font-size: 14px; text-align: center; text-decoration: none; cursor: pointer; border-radius: 4px; background-color: #f44336; color: white;">cancelar</a>
+</form>
+
+{% endblock %}
